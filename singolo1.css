@@ -131,7 +131,7 @@ flex-wrap: wrap;
     }
     .services_item_list li{
         width: 33%;
-        height: 140px;
+        height: 120px;
     }
     .services_item_list li h3{
         padding-left: 80px;
@@ -144,6 +144,7 @@ text-align: left;
     }
     .services_item_list li p{
         padding-left: 80px;
+        padding-top: 15px;
 font-size: 12px;
 line-height: 22px;
 color: #767e9e;
