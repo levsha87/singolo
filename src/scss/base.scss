@@ -1,40 +1,43 @@
 // $bg-color:#2D303A;
 $width-wrapper:1020px;
 body {
-    margin: 0 auto;
-    padding: 0;
+        margin: 0 auto;
+        padding: 0;
 }
-.header, .slider, .services, .portfolio, .footer {
-    width: $width-wrapper;
-    margin: 0 auto;
+.header, 
+.slider, 
+.services, 
+.portfolio, 
+.footer {
+        width: $width-wrapper;
+        margin: 0 auto;
 }
 .header {
-    display: flex;
-    flex-direction: row;
-    width:$width-wrapper;
-    justify-content: space-between;
-    align-items: center;
-    background: #2D303A;;
-    border-bottom: 6px solid #323746;
-    
+        display: flex;
+        flex-direction: row;
+        width:$width-wrapper;
+        justify-content: space-between;
+        align-items: center;
+        background: #2D303A;;
+        border-bottom: 6px solid #323746;
 }
 .logo{
-    width: 0.13*$width-wrapper;
-    font-family: Lato;
-    font-weight: 700;
-    font-style: normal;
-    text-transform: uppercase;
-    line-height: 30px;
-    letter-spacing: -0.03em;
-    color: #FFFFFF;
-    margin-left: 40px;
-    .logo_star{
-    color: red;
+        width: 0.13*$width-wrapper;
+        font-family: Lato;
+        font-weight: 700;
+        font-style: normal;
+        text-transform: uppercase;
+        line-height: 30px;
+        letter-spacing: -0.03em;
+        color: #FFFFFF;
+        margin-left: 40px;
+        h1 {
+            font-size: 25px;
+            }
+        .logo_star {
+            color: red;
+            }
     }
-    h1 {
-        font-size: 25px;
-    }
-}
 .navigation {
     width: 375px;
     margin-right: 40px;
@@ -50,7 +53,7 @@ body {
     justify-content: space-between;
     padding: 0;
     list-style-type: none; 
-}
+    }
 
     .navigation_link_red {
         color: red;
@@ -104,7 +107,7 @@ body {
         cursor: pointer;
     }
     
-    }
+}
     .services {
         background-color: #F2F2F2;
         height: 594px;
@@ -139,7 +142,7 @@ body {
                 font-size: 18px;
                 line-height: 18px;
                 text-align: justify;
-                  margin: 0 0;
+                margin: 0 0;
             }
             %service__items_p {
                 font-family: Lato;
@@ -152,7 +155,7 @@ body {
             }
             %services__items_wh {
                 flex-basis: 33%;
-               height: 25%;
+                height: 25%;
             }
             %services__items_before {
                 width: 60px;
@@ -174,15 +177,15 @@ body {
            .services__item_inovative-ideas, 
            .services__item_love, 
            .services__item_responsive, 
-           .services__item_support, .services__item_feel-star {
-               @extend %services__items_wh;
-              h4 {
-                  @extend %service__items_h4;
-                
-              }
-              p {
-                @extend %service__items_p;
-              }
+           .services__item_support, 
+           .services__item_feel-star {
+                    @extend %services__items_wh;
+                    h4 {
+                        @extend %service__items_h4;
+                    }
+                    p {
+                        @extend %service__items_p;
+                    }
                }
            
            .services__item_custom-design::before {
@@ -203,10 +206,8 @@ body {
             @extend %services__items_before;
             background-size: 32px 28px, 60px 60px;
             background-image: url('assets/img/services-item-3--nocircle.png'), 
-                              url('assets/img/circle.png');
-                
-                
-           }
+                              url('assets/img/circle.png');  
+            }
            
            .services__item_responsive::before {
             @extend %services__items_before;
@@ -220,13 +221,13 @@ body {
             background-size: 32px 28px, 60px 60px;
             background-image: url('assets/img/services-item-5--nocircle.png'), 
                               url('assets/img/circle.png');  
-           }
+            }
            
            .services__item_feel-star::before {
             @extend %services__items_before;
             background-size: 32px 32px, 60px 60px;
             background-image: url('assets/img/services-item-6--nocircle.png'), 
                               url('assets/img/circle.png');  
-           }
+            }
         }
-    }
+}
