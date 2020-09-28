@@ -231,3 +231,18 @@ body {
             }
         }
 }
+.portfolio{
+    &__images{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        
+        & div {
+            flex-basis: content;
+            padding: 5px;
+        }
+    }
+
+}
