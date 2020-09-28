@@ -307,13 +307,19 @@ body {
 }
 }
 .footer {
+    height: 0,745*$width-wrapper;
     background-color: #2D303A;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     .copyright{
-        color: white;
+        color:#666D89;
         margin-left: 40px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 13px;
+        line-height: 18px;
     }
     &__icons {
         margin-right: 40px;
@@ -326,7 +332,33 @@ body {
     &__icon {
         width: 32px;
         height: 32px;
-        border: 1px solid white;
+        border: 1px solid #666D89;;
         border-radius: 50%;
+        
+    }
+    %footer__icons_tamplate{
+        content:"";
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .facebook  {
+        background-image: url(assets/img/ico-facebook--nocircle.png);
+        background-size: 8px 14px;
+        @extend %footer__icons_tamplate;
+    }
+    .google_plus {
+        background-image: url(assets/img/ico-google-plus--nocircle.png);
+        background-size: 14px 14px;
+        @extend %footer__icons_tamplate;
+    }
+    .twitter {
+        background-image: url(assets/img/ico-twitter--nocircle.png);
+        background-size: 14px 12px;
+        @extend %footer__icons_tamplate; 
+    }
+    .linkedin {
+        background-image: url(assets/img/ico-linkedin--nocircle.png);
+        background-size: 14px 14px;
+        @extend %footer__icons_tamplate;
     }
 }
