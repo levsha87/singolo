@@ -287,6 +287,9 @@ body {
                 text-transform: capitalize;
                 text-align: center;
                 padding: 1px;
+                &:hover {
+                    color: white;
+                }
                 
             }
     }
