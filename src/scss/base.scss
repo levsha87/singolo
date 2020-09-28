@@ -232,6 +232,65 @@ body {
         }
 }
 .portfolio{
+    background-color: #2D303A;;
+    height: 0,84*$width-wrapper;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    border-bottom: 6px solid #323746;
+    &__description{
+        display: flex;
+        flex-direction: column;
+        height: 11,5%;
+        }
+            &__name {
+                height: 50%;
+                margin: 59px 0 0px 40px;
+                font-family: Lato;
+                font-weight: 900;
+                font-size: 30px;
+                line-height: 36px;
+                color: #666D89; 
+                }
+            &__text {
+                height: 50%;
+                font-family: Lato;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 28px;
+                padding: 0px 40px;
+                text-align: justify;
+                color: #767E9E;
+                margin-top: 12px;
+                }
+    &__navigation-list {
+            width: 290px;
+             height: 22px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            list-style-type: none; 
+            margin-block-start: 0;
+             margin-block-end: 0;
+           
+            & a {
+                color: #767E9E;
+                text-decoration: none;
+                border: 1px solid #BBBBBB;
+                box-sizing: border-box;
+                border-radius: 5px; 
+                font-family: Lato;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 12px;
+                text-transform: capitalize;
+                text-align: center;
+                padding: 1px;
+                
+            }
+    }
+        
     &__images{
         display: flex;
         flex-direction: row;
@@ -241,8 +300,7 @@ body {
         
         & div {
             flex-basis: content;
-            padding: 5px;
+            padding: 5px 10px 5px 0px; 
         }
-    }
-
+}
 }
