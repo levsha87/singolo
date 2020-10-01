@@ -295,17 +295,19 @@ body {
     }
         
     &__images{
-        height: 0,589*$width-wrapper;
+        width: 940 px /*0,922*$width-wrapper*/;
+        height: 601px/*0,589*$width-wrapper*/;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
+        overflow: hidden;
         
         & div {
             flex-basis: content;
             padding: 5px 10px 5px 0px; 
-            
+            flex:1;
         }
 }
 }
