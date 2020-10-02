@@ -390,3 +390,41 @@ body {
         @extend %footer__icons_tamplate;
     }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1019px) {
+.header, 
+.slider, 
+.services, 
+.portfolio, 
+.footer {
+        width: 100%;
+        margin: 0 auto;
+}
+.slider{
+    height: 448px;
+    .slider__content {
+        width: 600px;
+        height: 364px;
+        .phone-vertical img {
+            width: 181px;
+            height: 364px;
+        }
+        .phone-horizontal img {
+            width: 364px;
+            height: 181px;
+        }
+  }
+}
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+    .header, 
+    .slider, 
+    .services, 
+    .portfolio, 
+    .footer {
+            width: 100%;
+            margin: 0 auto;
+    }
+    
+    
+}
