@@ -4,6 +4,12 @@ body {
         margin: 0 auto;
         padding: 0;
 }
+.wrapper__header {
+    background: #2D303A;
+    border-bottom: 6px solid #323746;
+
+}
+
 .header, 
 .slider, 
 .services, 
@@ -18,8 +24,7 @@ body {
         width:$width-wrapper;
         justify-content: space-between;
         align-items: center;
-        background: #2D303A;;
-        border-bottom: 6px solid #323746;
+       
 }
 .logo{
         width: 0.13*$width-wrapper;
@@ -82,8 +87,13 @@ body {
             border-radius: 50%; 
     }
 }
-.slider{
+
+.wrapper__slider {
     background-color: #F06C64;
+    border-bottom: 6px solid#EA676B;
+}
+
+.slider{
     height: 594px;
     display: flex;
     justify-content: space-evenly;
@@ -108,12 +118,17 @@ body {
     }
     
 }
-    .services {
+
+    .wrapper__services {
         background-color: #F2F2F2;
+        border-bottom: 6px solid #FFFFFF;
+    }
+    .services {
+        
         height: 594px;
         display: flex;
         flex-direction: column;
-        border-bottom: 6px solid #FFFFFF;
+        
             .services__description{
             display: flex;
             flex-direction: column;
@@ -231,19 +246,21 @@ body {
             }
         }
 }
+.wrapper__portfolio {
+    background-color: #2D303A;
+    border-bottom: 6px solid #323746;
+}
+
 .portfolio{
-    
-    background-color: #2D303A;;
     height: 0,84*$width-wrapper;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    border-bottom: 6px solid #323746;
-    &__description{
-        display: flex;
-        flex-direction: column;
-        height: 11,5%;
-        }
+        &__description{
+            display: flex;
+            flex-direction: column;
+            height: 11,5%;
+            }
             &__name {
                 height: 50%;
                 margin: 59px 0 0px 40px;
@@ -311,9 +328,12 @@ body {
         }
 }
 }
+.wrapper__footer {
+    background-color: #2D303A;
+}
+
 .footer {
     height: 0,745*$width-wrapper;
-    background-color: #2D303A;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
