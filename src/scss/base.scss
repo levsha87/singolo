@@ -4,11 +4,6 @@ body {
         margin: 0 auto;
         padding: 0;
 }
-.wrapper__header {
-    background: #2D303A;
-    border-bottom: 6px solid #323746;
-
-}
 
 .header, 
 .slider, 
@@ -18,13 +13,17 @@ body {
         width: $width-wrapper;
         margin: 0 auto;
 }
+.wrapper__header {
+    background: #2D303A;
+    border-bottom: 6px solid #323746;
+
+}
 .header {
         display: flex;
         flex-direction: row;
-        width:$width-wrapper;
         justify-content: space-between;
         align-items: center;
-       
+       height: 89px;
 }
 .logo{
         width: 0.13*$width-wrapper;
@@ -100,7 +99,7 @@ body {
     align-items: center;
     .slider__content {
         width: 796px;
-        height: 483px;
+        height: 487px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -124,8 +123,7 @@ body {
         border-bottom: 6px solid #FFFFFF;
     }
     .services {
-        
-        height: 594px;
+        height: 500px;
         display: flex;
         flex-direction: column;
         
@@ -170,7 +168,7 @@ body {
             }
             %services__items_wh {
                 flex-basis: 33%;
-                height: 25%;
+                height: 45%;
             }
             %services__items_before {
                 width: 60px;
@@ -185,15 +183,19 @@ body {
                display: flex;
                flex-direction: row;
                flex-wrap: wrap;
-               height: 60%;
-               margin: 40px 40px 46px 40px;
-           
+               height: 45%;
+               justify-content: space-around;
+               margin-left: 40px;
+               margin-right: 40px;
+        
            .services__item_custom-design, 
            .services__item_inovative-ideas, 
            .services__item_love, 
            .services__item_responsive, 
            .services__item_support, 
            .services__item_feel-star {
+               margin-top: 20px;
+               margin-bottom: 20px;
                     @extend %services__items_wh;
                     h4 {
                         @extend %service__items_h4;
