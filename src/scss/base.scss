@@ -314,19 +314,20 @@ body {
     }
         
     &__images{
-        width: 940 px /*0,922*$width-wrapper*/;
-        height: 601px/*0,589*$width-wrapper*/;
+        width: 940px;
+        height: 601px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: space-between;
         overflow: hidden;
         
         & div {
-            flex-basis: content;
-            padding: 5px 10px 5px 0px; 
-            flex:1;
+            width: 220px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 }
 }
