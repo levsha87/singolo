@@ -415,6 +415,28 @@ body {
         }
   }
 }
+
+    .services {
+        height: 675px;
+
+        .services__description{
+            height: 30%;
+        }
+       
+        .services__items {
+             height: 70%;
+            justify-content: space-between;
+            .services__item_custom-design, 
+            .services__item_inovative-ideas, 
+            .services__item_love, 
+            .services__item_responsive, 
+            .services__item_support, 
+            .services__item_feel-star {
+                       flex-basis: 45%;
+                       height: 16%;  
+                }
+        }
+    }
 }
 @media only screen and (min-width: 375px) and (max-width: 767px) {
     .header, 
