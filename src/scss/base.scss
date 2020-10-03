@@ -437,6 +437,16 @@ body {
                 }
         }
     }
+
+    .portfolio{
+        height: 1,073*$width-wrapper;
+        
+        &__images{
+            align-self: center;
+            width: 689px;
+            height: 794px;
+        }
+    }
 }
 @media only screen and (min-width: 375px) and (max-width: 767px) {
     .header, 
