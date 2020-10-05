@@ -580,5 +580,21 @@ body {
 .mobile-navigation_link {
   transition-duration: .4s;
 }
+
+.slider{
+    height: 376px;
+    .slider__content {
+        width: 293px;
+        height: 178px;
+        .phone-vertical img {
+            width: 88.24px;
+            height: 177.61px;
+        }
+        .phone-horizontal img {
+            width: 177.61px;
+            height: 88.24px;
+        }
+  }
+}
     
 }
