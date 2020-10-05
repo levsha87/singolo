@@ -677,4 +677,19 @@ body {
         }
     }
 }
+.footer {
+    height: 76px;
+    .copyright {
+        display: none;
+    }
+    &__icons {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .footer__icon {
+            margin: 4px;
+        }
+    }
+}
 }
